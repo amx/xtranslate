@@ -4,6 +4,14 @@ In addition, plays mp3 from google translate by mp123
 Alt+4 translate from ru to en
 Alt+5 translate from en to ru
 
+Install:
+Copy .xbindkeysrc to home dir
+Copy to /usr/bin 
+	translate.py
+	translate.sh
+Copy ico.jpg to
+	/usr/local/share/ico.jpg
+
 Requirements:
 notify-send
 python
