@@ -1,3 +1,9 @@
 Translate x buffer using google translate and pop up result whith notify-send.
 
+Requirements:
+notify-send
+python
+mpg123
+
+
 

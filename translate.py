@@ -1,7 +1,17 @@
+#!/usr/bin/python
 import httplib, urllib, re, sys
+#for t in sys.argv: 	print t
+#print	sys.argv[2]
+#exit()
 
-def argparser():
+def getPhrase():
+    return sys.argv[3]
+
+def getsLang():
     return sys.argv[1]
+
+def gettLang():
+    return sys.argv[2]
 
 def retrieve(host, path):
     request = httplib.HTTPConnection(host)
@@ -21,9 +31,12 @@ def parse_item(item, depth = 0):
         result += parse_item(sub_item, depth + 1)
     return result
 
-phrase = argparser()
+phrase = getPhrase()
+tlang = gettLang()
+slang = getsLang()
+
 host = 'translate.google.com'
-URL = 'translate_a/t?client=t&sl=auto&tl=ru&' + urllib.urlencode({'text' : phrase})
+URL = 'translate_a/t?client=t&sl=' + slang + '&tl=' + tlang + '&' + urllib.urlencode({'text' : phrase})
 
 response = re.sub(',{2,}', ',', retrieve(host, "/" + URL))
 try:
@@ -31,7 +44,7 @@ try:
     result = ''
     for item in translated:
         if type(item) is str:
-            result = "Translation: " + item + " > ru\n\n" + result
+            result = "Translation: " + slang + " > " + tlang + "\n\n" + result
             break
         result += parse_item(item, -1)
     print result
