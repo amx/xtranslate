@@ -1,5 +1,5 @@
 Translate x buffer using google translate and pop up result whith notify-send.
-In addition, plays mp3 from google translate by mp123
+In addition, plays mp3 from google translate by mp123.
 
 Alt+4 translate from ru to en
 Alt+5 translate from en to ru
@@ -13,9 +13,8 @@ Copy ico.jpg to
 	/usr/local/share/ico.jpg
 
 Requirements:
-notify-send
-python
-mpg123
+	notify-send
+	python
+	mpg123
 
-
-
+Tested on ubuntu 3.0.0-15-generic x86_64
