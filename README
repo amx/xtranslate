@@ -1,10 +1,17 @@
-Translate x buffer using google translate and pop up result whith notify-send.
+xTranslate
+==========
+xTranslate is an open source tool for translate selected text.
+
+Translate selected text an any application using google translate and pop up result whith notify-send.
 In addition, plays mp3 from google translate by mp123.
 
 Alt+4 translate from ru to en
 Alt+5 translate from en to ru
 
 Install:
+sudo apt-get install python
+sudo apt-get install mpg123
+
 Copy .xbindkeysrc to home dir
 Copy to /usr/bin 
 	translate.py
