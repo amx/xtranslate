@@ -9,4 +9,4 @@ tLNG=$2
 
 notify-send -i /usr/local/share/ico.jpg -u critical "$(xsel -o)" "$(python /usr/bin/trans.py $sLNG $tLNG $BUF)"
 # echo "$BUF" | festival --tts
-wget -U "Mozilla/5.0" -qO-  "http://translate.google.com/translate_tts?q=$BUF&t=UTF-8&tl=$tLNG&prev=input" | mpg123 -q -
+wget -U "Mozilla/5.0" -qO-  "http://translate.google.com/translate_tts?q=$BUF&ie=UTF-8&tl=$sLNG&prev=input" | mpg123 -q -
