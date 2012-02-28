@@ -45,5 +45,11 @@
     m:0x18 + c:13
     Alt+Mod2 + 4 
 
+#Yandex translate
+"/usr/bin/translate_ya.sh ru en"
+    m:0x18 + c:12
+    Alt+Mod2 + 3 
+
+
 #
 # End of xbindkeys configuration
