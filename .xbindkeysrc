@@ -35,21 +35,25 @@
 
 
 
-#Remark
-"/usr/bin/translate en ru"
-    m:0x18 + c:14
-    Alt+Mod2 + 5 
+#xtranslate
+"/usr/bin/translate.sh en ru"
+    m:0x19 + c:13
+    Shift+Alt+Mod2 + 4 
 
-#Remark-Copy
-"/usr/bin/translate ru en"
-    m:0x18 + c:13
-    Alt+Mod2 + 4 
+#xtranslate
+"/usr/bin/translate.sh ru en"
+    m:0x19 + c:12
+    Shift+Alt+Mod2 + 3 
 
-#Yandex translate
+#Yandex translate en-ru
+"/usr/bin/translate_ya.sh en ru"
+    m:0x19 + c:11
+    Shift+Alt+Mod2 + 2 
+
+#Yandex translate ru-en
 "/usr/bin/translate_ya.sh ru en"
-    m:0x18 + c:12
-    Alt+Mod2 + 3 
-
+    m:0x19 + c:10
+    Shift+Alt+Mod2 + 1 
 
 #
 # End of xbindkeys configuration
